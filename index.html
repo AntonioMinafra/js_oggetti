@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- un oggetto è una collezione di date in relazione tra di loro-->
+    <script>
+        const chiave = 'genere';
+        
+        const persona = {
+            nome: 'luca',
+            cognome:'rossi',
+            genere:'maschio',
+            età:'27',
+            interessi:['tennis','basket','calcio'],
+            indirizzo: {
+                via: 'piazza roma',
+                cap:'70129',
+                provincia:'MI',
+                città:'milani'
+            },
+            saluta: function(){
+                console.log(`ciao sono ${this.nome}`)
+            }
+        }
+        
+        persona.saluta();
+    </script>
+</body>
+</html>
